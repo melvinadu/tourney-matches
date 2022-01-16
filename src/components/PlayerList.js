@@ -1,15 +1,10 @@
 import React from "react";
 import Player from "./Player";
-import playerData from "../data/playerData";
-import matchData from "../data/matchData";
-import { preparePlayerData } from "../helpers/playerHelpers";
-import { addWinsToPlayers } from "../helpers/playerHelpers";
+
 
 function PlayerList(props) {
-  const playerDataArray = preparePlayerData(playerData);
-  const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);
-  const onePlayer = parsedPlayerData[0];
-  
+  const onePlayer = props[0];
+
   return (
     <section className="PlayerList">
       <h1>
@@ -18,6 +13,7 @@ function PlayerList(props) {
       <Player {...onePlayer}/>
     </section>
   );
+
 }
 
 export default PlayerList;

@@ -1,8 +1,7 @@
 import React from "react";
 import Match from "./Match";
-import matchData from "../data/matchData";
 
-function MatchList(props) {
+function MatchList(matchData) {
   const oneMatch = matchData[0];
 
   return (
