@@ -13,7 +13,7 @@ function Match(props) {
       {/* if else statement written in ternary operator to be shown when there is winner or not*/}
 
       {{winner} ? <h2>{winner} is the winner by {scoreDifference}!</h2> : <h2>No winners yet!</h2>}
-  </article>
+    </article>
   );
 }
 
